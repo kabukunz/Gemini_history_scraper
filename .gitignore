@@ -2,3 +2,4 @@
 # Ignore any data type created by the user
 *.md
 *.json
+!README.md
