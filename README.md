@@ -23,7 +23,7 @@ If you have a Gemini conversation that's too long to split directly in the UI, h
    ```bash
    python fix_flexible_flow.py <chat_name_no_quotes.json>
    ```
-5. **Split Context:** Divide `<chat_name_no_quotes_realigned.json>` (or the generated `.md` file) into the parts you need.
+5. **Split Context:** If everything's ok you'll end up with a: `<chat_name_no_quotes_realigned.json>` (or `.md` ) file you can separate into the parts you need. See below for a possible way of creating a new chat with it.
 
 ---
 
