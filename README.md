@@ -1,4 +1,4 @@
-# Gemini History Scraper & Cleaner
+# Gemini Chat Scraper & Cleaner
 
 If you have a Gemini conversation that's too long to split directly in the UI, here's a lightweight toolkit to scrape, clean, and re-align it. Once processed, you can break the chat into smaller, manageable chunks to recreate new sessions seamlessly.
 
