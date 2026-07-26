@@ -8,7 +8,11 @@ If you have a Gemini conversation that's too long to split directly in the UI, h
 
 1. **Share & Open:** Share your long Gemini conversation, then open the shared link in a standalone tab or window.
 2. **Scrape:** Open your browser's DevTools Console (`F12`), paste `console_scraper.js`, and press **Enter**.
+
    > **Note:** Keep the browser window focused while scraping to prevent execution from pausing. Enable auto-save without confirmation and authorize multi-file downloads if prompted. You can pause and resume using DevTools sources debugging.
+
+You'll get a list of files in your download directory named gemini_chat_backup_partxxx_(yyyy_items).json. they're incremental and the last one created is going to have all chat content
+
 3. **Clean Scraper Noise:**
    ```bash
    python clean_quotes.py <chat_name.json>
