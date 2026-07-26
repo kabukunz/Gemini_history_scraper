@@ -11,13 +11,15 @@ If you have a Gemini conversation that's too long to split directly in the UI, h
 
    > **Note:** Keep the browser window focused while scraping to prevent execution from pausing. Enable auto-save without confirmation and authorize multi-file downloads if prompted. You can pause and resume using DevTools sources debugging.
 
-You'll get a list of files in your download directory named gemini_chat_backup_partxxx_(yyyy_items).json. they're incremental and the last one created is going to have all chat content
+    You'll get a list of files in your download directory named gemini_chat_backup_partxxx_(yyyy_items).json. they're incremental and the last one created is going to have all chat content
 
 3. **Clean Scraper Noise:**
+    remove chats artifact with:
    ```bash
    python clean_quotes.py <chat_name.json>
    ```
-4. **Fix Inverted Flow & Sequence:**
+   (tested with python 3.9)
+4. **Fix Inverted Flow & Sequence:** some part of conversation may be reversed. use:
    ```bash
    python fix_flexible_flow.py <chat_name_no_quotes.json>
    ```
